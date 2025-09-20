@@ -6,7 +6,7 @@ function Gamecard(data) {
         <img
           src={data.image}
           alt={data.name}
-          className="w-full h-[200px] object-cover mb-2"
+          className="w-full h-[250px] object-cover mb-2"
         />
         <div className="flex justify-between items-center mt-2 mb-2">
           <p className="text-white text-[13px]">{data.name}</p>
