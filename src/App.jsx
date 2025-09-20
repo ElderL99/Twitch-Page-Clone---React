@@ -1,4 +1,4 @@
-import Mainsection from "./components/mainSection";
+import Mainsection from "./components/MainSection.jsx";
 
 function App() {
   return (
