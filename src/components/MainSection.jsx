@@ -28,10 +28,10 @@ function Mainsection() {
 
   return (
     <>
-      <h1 className="text-5xl font-[500] mb-6">Browse</h1>
+      <h1 className="text-6xl font-[500] mb-6">Browse</h1>
 
       {/* 🔹 Botones */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-6 max-w-screen-lg mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-6  mx-auto lg:">
         {buttons.map((button) => (
           <SectionButton
             key={button.name}
@@ -58,24 +58,26 @@ function Mainsection() {
       </div>
 
       {/* 🔹 Filtros */}
-      <section className="mb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section className="mb-8  ">
+        <div className="md:flex md: justify-between">
           {/* Input */}
-          <input
-            type="text"
-            className="bg-[#18181b] col-span-1 md:col-span-2 w-full h-8 px-3 border rounded placeholder:text-center placeholder:text-sm"
-            placeholder="Search Category Tags"
-            value={searchTerm}
-            onChange={handleSearch}
-          />
+          <div className="">
+            <input
+              type="text"
+              className="bg-[#18181b] rounded-lg w-[250px] border border-gray-100 placeholder:px-4 "
+              placeholder="Search Category Tags"
+              value={searchTerm}
+              onChange={handleSearch}
+            />
+          </div>
 
           {/* Sort By + Select */}
-          <div className="flex items-center gap-2 col-span-1 md:col-span-2 lg:col-span-1">
-            <span className="text-[#efeff1] text-sm">Sort By</span>
+          <div className="flex items-center gap-3 ">
+            <p className="font-bold">Sort By</p>
             <select
               name="filterByRecomendation"
               id="filterByRecomendation"
-              className="bg-[#18181b] rounded-lg border w-full md:w-[200px] h-[32px] text-sm text-white"
+              className="bg-[#18181b] rounded-lg border p-1"
               value={Category}
               onChange={handleChange}
             >
@@ -89,7 +91,7 @@ function Mainsection() {
       {/* 🔹 Cards */}
       <section
         id="printCard"
-        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6 w-full"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-[repeat(auto-fit,minmax(150px,2fr))] gap-3 w-full"
       >
         {gamesToRender.map((game, index) => (
           <Gamecard
