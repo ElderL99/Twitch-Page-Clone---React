@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <>
-      <header className=" flex justify-between items-center bg-[#18181b] border-b-2 border-black p-2 h-13 ">
+      <header className=" flex justify-between items-center bg-[#18181b] border-b-2 border-black p-1 h-13 ">
         <div className="flex justify-between items-center gap-5 ">
           <svg
             width="40"
@@ -76,10 +76,10 @@ const Header = () => {
         <div className="flex justify-between items-center gap-0.5">
           <input
             type="text"
-            className="hidden md:flex lg:w-[300px] border-2 border-r-0 bg-[#18181b] text-white p-1 rounded-l-md placeholder:flex placeholder:text-start placeholder:p-3 focus:border-[#bf94ff] focus:outline-none focus:ring-2 focus:ring-[#bf94ff] transition-colors duration-200"
+            className="hidden md:flex lg:w-[300px] border border-r-0 bg-[#18181b] text-white p-1 rounded-l-md placeholder:flex placeholder:text-start placeholder:p-3 focus:border-[#bf94ff] focus:outline-none focus:ring-2 focus:ring-[#bf94ff] transition-colors duration-200"
             placeholder="Search"
           />
-          <button className="bg-hidden md:bg-[#2f2f35] rounded-r-md  rounded-l-none lg:flex lg:items-center  ">
+          <button className=" md:bg-[#2f2f35] rounded-r-md  rounded-l-none lg:flex lg:items-center  ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
