@@ -64,8 +64,8 @@ function Mainsection() {
           <div className="">
             <input
               type="text"
-              className="bg-[#18181b] rounded-lg w-[250px] border border-gray-100 placeholder:px-4 "
-              placeholder="Search Category Tags"
+              className="bg-[#18181b] rounded-lg w-[250px] border border-gray-100 placeholder:px-4 focus:border-[#bf94ff] focus:outline-none focus:ring-2 focus:ring-[#bf94ff] transition-colors duration-200 "
+              placeholder="Search By Name"
               value={searchTerm}
               onChange={handleSearch}
             />
@@ -91,7 +91,7 @@ function Mainsection() {
       {/* 🔹 Cards */}
       <section
         id="printCard"
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-[repeat(auto-fit,minmax(150px,2fr))] gap-3 w-full"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-3 w-full"
       >
         {gamesToRender.map((game, index) => (
           <Gamecard

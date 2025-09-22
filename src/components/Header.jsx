@@ -79,7 +79,7 @@ const Header = () => {
         <div className="flex justify-between items-center gap-0.5">
           <input
             type="text"
-            className="hidden md:flex lg:w-[300px] border border-r-0 bg-[#18181b] text-white p-1 rounded-l-md placeholder:flex placeholder:text-start placeholder:p-3 focus:border-[#bf94ff] focus:outline-none focus:ring-2 focus:ring-[#bf94ff] transition-colors duration-200"
+            className="hidden md:flex lg:w-[350px] border border-r bg-[#18181b] text-white p-1 rounded-l-md placeholder:flex placeholder:text-start placeholder:p-3 focus:border-[#bf94ff] focus:outline-none focus:ring-2 focus:ring-[#bf94ff] transition-colors duration-200"
             placeholder="Search"
           />
           <button className=" md:bg-[#2f2f35] rounded-r-md  rounded-l-none lg:flex lg:items-center  ">

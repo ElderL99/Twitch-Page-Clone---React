@@ -1,13 +1,13 @@
 import menupuntos from "../../public/menu-puntos.png";
 function Gamecard({ image, name, viewers, tags }) {
   return (
-    <div className="bg-dark rounded-lg overflow-hidden ">
+    <div className="bg-dark  overflow-hidden  ">
       {/* imagen responsiva con aspect ratio */}
-      <div className="w-full aspect-[16/9] ">
+      <div className="w-full aspect-[16/9]   ">
         <img
           src={image}
           alt={name}
-          className="w-full h-[20vh] object-cover transform transition-transform duration-300 origin-left hover:scale-110 "
+          className="w-full  lg:h-[20vh] object-cover transform origin-left hover:scale-110 hover:border-l-[.3rem] hover:border-b-[.3rem] hover:border-[#a970ff] transition-all duration-300  "
         />
       </div>
 
