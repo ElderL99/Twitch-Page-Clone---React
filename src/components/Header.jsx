@@ -8,6 +8,7 @@ const Header = () => {
             height="40"
             viewBox="0 0 40 40"
             xmlns="http://www.w3.org/2000/svg"
+            className="hover: cursor-pointer"
           >
             <g>
               <polygon
@@ -24,7 +25,9 @@ const Header = () => {
               />
             </g>
           </svg>
-          <p className="hidden md:block text-lg font-bold">Following</p>
+          <p className="hidden md:block text-lg font-bold hover:text-[#bf94ff] hover:cursor-pointer">
+            Following
+          </p>
           <a href="" className="md:hidden">
             <svg
               width="20px"
@@ -41,7 +44,7 @@ const Header = () => {
               ></path>
             </svg>
           </a>
-          <p className=" hidden md:block text-[#bf94ff] text-lg font-bold ">
+          <p className=" hidden md:block text-[#bf94ff] text-lg font-bold hover:cursor-pointer ">
             Browse
           </p>
           <a href="" className="md:hidden">
@@ -96,74 +99,86 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <ul className="flex justify-between items-center gap-4 ">
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="none"
-                stroke="white"
-                stroke-width="2"
-                className="size-7 p-1 md:hidden"
-              >
-                <circle cx="9" cy="9" r="6" />
-                <line x1="14" y1="14" x2="18" y2="18" />
-              </svg>
+              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                  className="size-7 p-1 md:hidden"
+                >
+                  <circle cx="9" cy="9" r="6" />
+                  <line x1="14" y1="14" x2="18" y2="18" />
+                </svg>
+              </div>
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-white"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M13.798 10.456 10 6.657l-3.798 3.799L4 8.805V13h12V8.805l-2.202 1.65zM18 5v8a2 2 0 0 1-2 2H4a2.002 2.002 0 0 1-2-2V5l4 3 4-4 4 4 4-3z"
-                />
-              </svg>
+              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M13.798 10.456 10 6.657l-3.798 3.799L4 8.805V13h12V8.805l-2.202 1.65zM18 5v8a2 2 0 0 1-2 2H4a2.002 2.002 0 0 1-2-2V5l4 3 4-4 4 4 4-3z"
+                  />
+                </svg>
+              </div>
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-white"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M4 3h12l2 4v10H2V7l2-4zm.236 4H8v1a1 1 0 001 1h2a1 1 0 001-1V7h3.764l-1-2H5.236l-1 2zM16 9h-2.17A3.001 3.001 0 0111 11H9a3.001 3.001 0 01-2.83-2H4v6h12V9z"
-                />
-              </svg>
+              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M4 3h12l2 4v10H2V7l2-4zm.236 4H8v1a1 1 0 001 1h2a1 1 0 001-1V7h3.764l-1-2H5.236l-1 2zM16 9h-2.17A3.001 3.001 0 0111 11H9a3.001 3.001 0 01-2.83-2H4v6h12V9z"
+                  />
+                </svg>
+              </div>
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-white"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M7.828 13 10 15.172 12.172 13H15V5H5v8h2.828zM10 18l-3-3H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2l-3 3z"
-                />
-              </svg>
+              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M7.828 13 10 15.172 12.172 13H15V5H5v8h2.828zM10 18l-3-3H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2l-3 3z"
+                  />
+                </svg>
+              </div>
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-white"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="m3 12 7-10 7 10-7 6-7-6zm2.678-.338L10 5.487l4.322 6.173-.85.728L10 11l-3.473 1.39-.849-.729z"
-                />
-              </svg>
+              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="m3 12 7-10 7 10-7 6-7-6zm2.678-.338L10 5.487l4.322 6.173-.85.728L10 11l-3.473 1.39-.849-.729z"
+                  />
+                </svg>
+              </div>
             </li>
+
+            {/* Botón original “Go Ad-Free for Free” */}
             <li>
               <button className="flex justify-center items-center p-1 rounded-full gap-1 bg-[#2f2f35]">
                 <svg
@@ -180,11 +195,13 @@ const Header = () => {
                   />
                 </svg>
 
-                <span className=" hidden  font-bold text-sm lg:block">
+                <span className="hidden font-bold text-sm lg:block">
                   Go Ad-Free for Free
                 </span>
               </button>
             </li>
+
+            {/* Botón de usuario */}
             <li>
               <button className="lg:flex lg:items-center">
                 <img
