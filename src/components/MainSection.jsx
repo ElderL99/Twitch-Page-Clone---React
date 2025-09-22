@@ -5,6 +5,26 @@ import Gamecard from "./Gamecard.jsx";
 
 function Mainsection() {
   const [Category, setCategory] = useState("recommended");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleChange = (e) => {
+    setCategory(e.target.value);
+  };
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  // filter by selet
+  const sortedData =
+    Category === "viewers"
+      ? [...data].sort((a, b) => b.viewers - a.viewers)
+      : data;
+
+  // filter by Name
+  const gamesToRender = sortedData.filter((game) =>
+    game.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <>
@@ -45,6 +65,8 @@ function Mainsection() {
             type="text"
             className="bg-[#18181b] col-span-1 md:col-span-2 w-full h-8 px-3 border rounded placeholder:text-center placeholder:text-sm"
             placeholder="Search Category Tags"
+            value={searchTerm}
+            onChange={handleSearch}
           />
 
           {/* Sort By + Select */}
@@ -54,6 +76,8 @@ function Mainsection() {
               name="filterByRecomendation"
               id="filterByRecomendation"
               className="bg-[#18181b] rounded-lg border w-full md:w-[200px] h-[32px] text-sm text-white"
+              value={Category}
+              onChange={handleChange}
             >
               <option value="recommended">Recommended For You</option>
               <option value="viewers">Viewers High or Low</option>
@@ -67,7 +91,7 @@ function Mainsection() {
         id="printCard"
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6 w-full"
       >
-        {data.map((game, index) => (
+        {gamesToRender.map((game, index) => (
           <Gamecard
             key={index}
             image={game.image}
