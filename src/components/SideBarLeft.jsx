@@ -52,34 +52,6 @@ function SideBarLeft() {
           </a>
         </ul>
       </main>
-
-      <section>
-        <p className="font-bold text-sm hover:cursor-pointer hidden lg:block ">
-          Recommented Categories
-        </p>
-        <ul className="">
-          <li>
-            <div className="grid grid-cols-3">
-              <div className="col-span-1">
-                <img
-                  src="https://static-cdn.jtvnw.net/ttv-boxart/509658-30x42.jpg"
-                  alt="image"
-                  className=""
-                />
-              </div>
-              <div className="col-span-1">
-                <p>Just Chatting</p>
-              </div>
-              <div className="col-span-1">3</div>
-            </div>
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
     </section>
   );
 }

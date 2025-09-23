@@ -130,6 +130,7 @@ export const streamers = [
     name: "IIIoJuan",
     game: "Grand Theft ...",
     viewers: 45.7,
+    isLive: true,
   },
   {
     image:
@@ -137,6 +138,7 @@ export const streamers = [
     name: "shoroud",
     game: "Rust",
     viewers: 22,
+    isLive: true,
   },
   {
     image:
@@ -144,6 +146,7 @@ export const streamers = [
     name: "HansanAbi",
     game: "Just Chatting",
     viewers: "46.6",
+    isLive: true,
   },
   {
     image:
@@ -151,6 +154,7 @@ export const streamers = [
     name: "DjMaRiiO",
     game: "Sports",
     viewers: "40.7",
+    isLive: false,
   },
   {
     image:
