@@ -7,7 +7,7 @@ function Gamecard({ image, name, viewers, tags }) {
         <img
           src={image}
           alt={name}
-          className="w-full  lg:h-[20vh] object-cover transform origin-left hover:scale-110 hover:border-l-[.3rem] hover:border-b-[.3rem] hover:border-[#a970ff] transition-all duration-300  "
+          className="w-full  lg:h-[23vh] object-cover transform origin-left hover:scale-110 hover:border-l-[.3rem] hover:border-b-[.3rem] hover:border-[#a970ff] transition-all duration-300  "
         />
       </div>
 
