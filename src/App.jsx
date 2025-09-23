@@ -1,17 +1,19 @@
 import Mainsection from "./components/MainSection.jsx";
+import SideBarLeft from "./components/SideBarLeft.jsx";
 
 function App() {
   return (
-    <>
-      <main className="flex flex-row w-full">
-        <article className="flex w-[50px] lg:w-[200px]">
-          soy un articulo
-        </article>
-        <section className="  w-full  p-4">
-          <Mainsection />
-        </section>
-      </main>
-    </>
+    <main className="flex min-h-screen bg-[#1a1a1a]">
+      {/* Sidebar */}
+      <aside className=" bg-[#26262c] ">
+        <SideBarLeft />
+      </aside>
+
+      {/* Contenido principal */}
+      <section className="flex-1 p-5 overflow-auto">
+        <Mainsection />
+      </section>
+    </main>
   );
 }
 

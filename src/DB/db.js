@@ -122,3 +122,48 @@ export const buttons = [
     name: "Esports",
   },
 ];
+
+export const streamers = [
+  {
+    image:
+      "https://static-cdn.jtvnw.net/jtv_user_pictures/593b5641-c626-4ba4-ba49-11cb33f6c3e8-profile_image-70x70.png",
+    name: "IIIoJuan",
+    game: "Grand Theft ...",
+    viewers: 45.7,
+  },
+  {
+    image:
+      "https://static-cdn.jtvnw.net/jtv_user_pictures/7ed5e0c6-0191-4eef-8328-4af6e4ea5318-profile_image-70x70.png",
+    name: "shoroud",
+    game: "Rust",
+    viewers: 22,
+  },
+  {
+    image:
+      "https://static-cdn.jtvnw.net/jtv_user_pictures/0347a9aa-e396-49a5-b0f1-31261704bab8-profile_image-70x70.jpeg",
+    name: "HansanAbi",
+    game: "Just Chatting",
+    viewers: "46.6",
+  },
+  {
+    image:
+      "https://static-cdn.jtvnw.net/jtv_user_pictures/3028ed95-b681-4f89-92b5-1c383d95acf3-profile_image-70x70.png",
+    name: "DjMaRiiO",
+    game: "Sports",
+    viewers: "40.7",
+  },
+  {
+    image:
+      "https://static-cdn.jtvnw.net/jtv_user_pictures/74586414-e27b-4347-89c5-109e42ac3e1d-profile_image-70x70.png",
+    name: "juansguarnizo",
+    game: "Grand Theft Auto V",
+    viewers: "5.8",
+  },
+  {
+    image:
+      "https://static-cdn.jtvnw.net/jtv_user_pictures/46a38d3a-a39c-4c43-ac12-c331b1c469c2-profile_image-70x70.png",
+    name: "IShowSpeed",
+    game: "IRL",
+    viewers: "10.2",
+  },
+];

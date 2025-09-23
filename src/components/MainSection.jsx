@@ -31,7 +31,7 @@ function Mainsection() {
       <h1 className="text-6xl font-[500] mb-6">Browse</h1>
 
       {/* 🔹 Botones */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-6  mx-auto lg:">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-6  mx-auto">
         {buttons.map((button) => (
           <SectionButton
             key={button.name}

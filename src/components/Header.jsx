@@ -1,14 +1,15 @@
 const Header = () => {
   return (
     <>
-      <header className=" flex justify-between items-center bg-[#18181b] border-b-2 border-black p-1 h-13 ">
-        <div className="flex justify-between items-center gap-5 ">
+      <header className="w-full flex justify-between items-center bg-[#18181b] border-b border-[#2f2f35] h-14  ">
+        {/* Izquierda */}
+        <div className="flex justify-between items-center gap-1.5">
           <svg
             width="40"
             height="40"
             viewBox="0 0 40 40"
             xmlns="http://www.w3.org/2000/svg"
-            className="hover: cursor-pointer"
+            className="cursor-pointer hover:opacity-80 transition"
           >
             <g>
               <polygon
@@ -25,7 +26,7 @@ const Header = () => {
               />
             </g>
           </svg>
-          <p className="hidden md:block text-lg font-bold hover:text-[#bf94ff] hover:cursor-pointer">
+          <p className="hidden md:block text-lg font-bold hover:text-[#bf94ff] cursor-pointer transition-colors duration-200">
             Following
           </p>
           <a href="" className="md:hidden">
@@ -36,18 +37,18 @@ const Header = () => {
               viewBox="0 0 20 20"
               x="0px"
               y="0px"
+              className="hover:opacity-80 transition"
             >
               <path
                 d="M9.171 4.171A4 4 0 0 0 6.343 3H6a4 4 0 0 0-4 4v.343a4 4 0 0 0 1.172 2.829L10 17l6.828-6.828A4 4 0 0 0 18 7.343V7a4 4 0 0 0-4-4h-.343a4 4 0 0 0-2.829 1.172L10 5l-.829-.829zm.829 10 5.414-5.414A2 2 0 0 0 16 7.343V7a2 2 0 0 0-2-2h-.343a2 2 0 0 0-1.414.586L10 7.828 7.757 5.586A2 2 0 0 0 6.343 5H6a2 2 0 0 0-2 2v.343a2 2 0 0 0 .586 1.414L10 14.172z"
                 fill="white"
-                fill-rule="evenodd"
               ></path>
             </svg>
           </a>
-          <p className=" hidden md:block text-[#bf94ff] text-lg font-bold hover:cursor-pointer ">
+          <p className="hidden md:block text-[#bf94ff] text-lg font-bold cursor-pointer hover:opacity-80 transition-colors duration-200">
             Browse
           </p>
-          <a href="" className="md:hidden">
+          <a href="" className="md:hidden hover:opacity-80 transition">
             <svg width="20px" height="20px" viewBox="0 0 20 20">
               <g>
                 <path
@@ -62,7 +63,7 @@ const Header = () => {
               </g>
             </svg>
           </a>
-          <a href="">
+          <a href="" className="hover:opacity-80 transition">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -76,19 +77,20 @@ const Header = () => {
             </svg>
           </a>
         </div>
+
+        {/* Centro - Buscador */}
         <div className="flex justify-between items-center gap-0.5">
           <input
             type="text"
-            className="hidden md:flex lg:w-[350px] border border-r bg-[#18181b] text-white p-1 rounded-l-md placeholder:flex placeholder:text-start placeholder:p-3 focus:border-[#bf94ff] focus:outline-none focus:ring-2 focus:ring-[#bf94ff] transition-colors duration-200"
+            className="hidden md:flex lg:w-[300px] bg-[#0e0e10] text-white px-3 py-1 rounded-l-md border border-[#2f2f35] placeholder:text-gray-400 focus:border-[#bf94ff] focus:ring-1 focus:ring-[#bf94ff] outline-none text-sm transition"
             placeholder="Search"
           />
-          <button className=" md:bg-[#2f2f35] rounded-r-md  rounded-l-none lg:flex lg:items-center  ">
+          <button className="md:bg-[#2f2f35] rounded-r-md lg:flex lg:items-center hover:bg-[#3a3a40] transition">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="none"
               stroke="white"
-              stroke-width="2"
               className="hidden md:block size-9 p-1"
             >
               <circle cx="9" cy="9" r="6" />
@@ -96,10 +98,12 @@ const Header = () => {
             </svg>
           </button>
         </div>
+
+        {/* Derecha */}
         <div className="flex justify-between items-center">
-          <ul className="flex justify-between items-center gap-4 ">
+          <ul className="flex items-center gap-3">
             <li>
-              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+              <div className="p-2 rounded-full hover:bg-[#3a3a40] transition cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -114,23 +118,19 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+              <div className="p-2 rounded-full hover:bg-[#3a3a40] transition cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-white"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M13.798 10.456 10 6.657l-3.798 3.799L4 8.805V13h12V8.805l-2.202 1.65zM18 5v8a2 2 0 0 1-2 2H4a2.002 2.002 0 0 1-2-2V5l4 3 4-4 4 4 4-3z"
-                  />
+                  <path d="M13.798 10.456 10 6.657l-3.798 3.799L4 8.805V13h12V8.805l-2.202 1.65zM18 5v8a2 2 0 0 1-2 2H4a2.002 2.002 0 0 1-2-2V5l4 3 4-4 4 4 4-3z" />
                 </svg>
               </div>
             </li>
             <li>
-              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+              <div className="p-2 rounded-full hover:bg-[#3a3a40] transition cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-white"
@@ -146,7 +146,7 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+              <div className="p-2 rounded-full hover:bg-[#3a3a40] transition cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-white"
@@ -162,7 +162,7 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <div className="p-2 rounded-full hover:bg-[#2f2f35] transition cursor-pointer">
+              <div className="p-2 rounded-full hover:bg-[#3a3a40] transition cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-white"
@@ -180,7 +180,7 @@ const Header = () => {
 
             {/* Botón original “Go Ad-Free for Free” */}
             <li>
-              <button className="flex justify-center items-center p-1 rounded-full gap-1 bg-[#2f2f35]">
+              <button className="flex justify-center items-center px-3 py-1 rounded-full gap-1 bg-[#2f2f35] hover:bg-[#3a3a40] transition">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5 text-white"
@@ -188,26 +188,22 @@ const Header = () => {
                   fill="currentColor"
                 >
                   <path d="M10.114 9.622 11 7 7.175 9.323a.382.382 0 0 0 .013.65l.698.405L7 13l3.825-2.323a.382.382 0 0 0-.012-.65l-.699-.405z" />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M18 7h-2V4H2v12h14v-3h2V7zm-4-1v3h2v2h-2v3H4V6h10z"
-                  />
+                  <path d="M18 7h-2V4H2v12h14v-3h2V7zm-4-1v3h2v2h-2v3H4V6h10z" />
                 </svg>
 
-                <span className="hidden font-bold text-sm lg:block">
+                <span className="hidden font-bold text-sm  md:hidden lg:flex  lg:justify-between">
                   Go Ad-Free for Free
                 </span>
               </button>
             </li>
 
             {/* Botón de usuario */}
-            <li>
-              <button className="lg:flex lg:items-center">
+            <li className="sm:w-10">
+              <button className="">
                 <img
                   src="https://static-cdn.jtvnw.net/jtv_user_pictures/bf6a04cf-3f44-4986-8eed-5c36bfad542b-profile_image-70x70.png"
                   alt="user"
-                  className="rounded-full size-8"
+                  className="size-10 rounded-full"
                 />
               </button>
             </li>
